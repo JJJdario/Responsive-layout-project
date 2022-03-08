@@ -13,7 +13,6 @@ nav ul {
     display: flex;
     padding: 10px;
     flex-direction: column;
-    list-style: none;
     letter-spacing: .7px;
 }
 
@@ -31,7 +30,7 @@ h2 {
 p {
     font-family: "open sans";
     font-weight: 400;
-    color: dimgray;
+    color: rgb(78, 76, 76);
     font-size: 1.5rem;
     line-height: 1.5;
     padding: 1rem;
@@ -39,6 +38,12 @@ p {
 
 a {
     text-decoration: none;
+    color: rgb(48, 55, 61);
+}
+
+a:hover {
+    color: blue;
+    cursor: pointer;
 }
 
 ol {
@@ -67,11 +72,6 @@ footer nav ul {
     text-transform: uppercase;
 }
 
-.links:hover {
-    color: blue;
-    cursor: pointer;
-}
-
 .content img {
     object-fit: cover;
     width: 100%;
@@ -79,9 +79,9 @@ footer nav ul {
     margin-top: 30px;
 }
 
-.special {
+#portfolio {
     font-family: "ital";
-    font-size: 2.3rem;
+    font-size: 2rem;
     margin-top: 120px;
     margin-bottom: 70px;
 }
@@ -90,7 +90,77 @@ footer nav ul {
     margin-top: 140px;
 }
 
-.back-to-top:hover {
-    color: blue;
-    cursor: pointer;
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .links {
+        font-size: 1rem;
+    }
+    h1 {
+        margin-top: 40px;
+        margin-bottom: 0;
+        font-size: 1.7rem;
+    }
+    .portfile {
+        float: right;
+        width: 40%;
+        padding-left: 30px;
+    }
+    #portfolio {
+        clear: both;
+        padding-top: 60px;
+        margin-top: 130px;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        letter-spacing: .9px;
+    }
+    .presentation {
+        padding-top: 30px;
+        text-align: left;
+    }
+    p {
+        line-height: 1.2;
+        font-size: 1.3rem;
+        margin: 0;
+        padding: 0;
+    }
+    .content div {
+        width: 40vw;
+        flex-grow: 1;
+        margin: 10px;
+    }
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    h2 {
+        margin: 10px auto;
+    }
+    #contacts {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    .bottom-nav {
+        justify-content: space-around;
+        font-size: 1rem;
+        border-top: solid 1px rgb(218, 215, 215);
+    }
+    .item1 {
+        margin-right: auto;
+    }
+    .top {
+        display: none;
+    }
+    .hidden {
+        margin: 0 1rem;
+        display: flex;
+        text-transform: uppercase;
+    }
 }
