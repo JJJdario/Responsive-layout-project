@@ -1,216 +1,220 @@
-    body {
-        font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
-        font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
-        text-align: center;
-        margin: 20px;
-    }
-    
-    .bio,
-    nav ul,
-    footer nav ul {
-        display: flex;
-    }
-    
-    .bio {
-        flex-direction: column;
-    }
-    
-    .portfile {
-        margin: 0 10%;
-    }
-    
-    li {
-        list-style-type: none;
-    }
-    
-    nav ul {
-        padding: 10px;
-        flex-direction: column;
-        letter-spacing: .7px;
-    }
-    
-    h1 {
-        font-family: "roboto";
-        font-weight: 700;
-        font-size: 2.3rem;
-        margin-top: 0;
-    }
-    
-    h2 {
-        font-family: "open sans";
-    }
-    
-    p {
-        font-family: "open sans";
-        font-weight: 400;
-        color: rgb(78, 76, 76);
-        font-size: 1.5rem;
-        line-height: 1.5;
-        padding: 1rem;
-    }
-    
-    a {
-        text-decoration: none;
-        color: rgb(48, 55, 61);
-    }
-    
-    a:hover {
-        color: blue;
-        cursor: pointer;
-    }
-    
-    ol {
-        color: dimgrey;
-        font-size: 1.5rem;
-        line-height: 3rem;
-    }
-    
-    footer nav ul {
-        flex-direction: row;
-        justify-content: space-around;
-        margin-top: 130px;
-    }
-    
-    .links {
-        padding: 1.3rem;
-        font-family: "roboto";
-        font-weight: 700;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-    }
-    
-    .content img {
-        object-fit: cover;
-        width: 100%;
-        margin-bottom: 20px;
-        margin-top: 30px;
-    }
-    
-    #portfolio {
-        font-family: "ital";
-        font-size: 2rem;
-        margin-top: 120px;
-        margin-bottom: 70px;
-    }
-    
-    #contacts {
-        margin-top: 140px;
-    }
-    
-    .hidden {
-        display: none;
-    }
-    
-    .hightlight {
-        font-family: 'open sans';
-        font-weight: 400;
-    }
-    
-    .h1-student {
-        display: none;
-    }
-    
-    @media screen and (min-width: 768px) {
-        nav ul {
-            flex-direction: row;
-            justify-content: center;
-        }
-        .links {
-            font-size: 1rem;
-        }
-        h1 {
-            margin-top: 40px;
-            margin-bottom: 0;
-            font-size: 1.7rem;
-        }
-        .bio {
-            flex-direction: row;
-        }
-        #portfolio {
-            clear: both;
-            padding-top: 60px;
-            margin-top: 130px;
-            text-align: center;
-            font-size: 1.5rem;
-            margin-bottom: 0;
-            letter-spacing: .9px;
-        }
-        .presentation {
-            padding-right: 20px;
-            text-align: left;
-            order: -1;
-        }
-        p {
-            line-height: 1.2;
-            font-size: 1.3rem;
-            margin: 0;
-            padding: 0;
-        }
-        .content div {
-            width: 40vw;
-            flex-grow: 1;
-            margin: 10px;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-        }
-        h2 {
-            margin: 10px auto;
-        }
-        #contacts {
-            margin-top: 100px;
-            margin-bottom: 40px;
-        }
-        .p-contact {
-            margin: 0 12%;
-        }
-        .bottom-nav {
-            justify-content: space-around;
-            font-size: 1rem;
-            border-top: solid 1px rgb(218, 215, 215);
-        }
-        .item1 {
-            margin-right: auto;
-        }
-        .top {
-            display: none;
-        }
-        .hidden {
-            margin: 0 1rem;
-            display: flex;
-            text-transform: uppercase;
-        }
-    }
-    
-    @media screen and (min-width: 1024px) {
-        body {
-            margin: 0 15%;
-        }
-        .content div {
-            flex-direction: row;
-            width: 25%;
-        }
-        nav ul {
-            margin-top: 0;
-            padding-left: 0;
-            justify-content: flex-end;
-        }
-        .links {
-            padding-right: 10px;
-        }
-        h1 {
-            display: none;
-        }
-        .h1-student {
-            display: flex;
-            margin-right: auto;
-            margin-top: 15px;
-            font-weight: 700;
-            font-size: 25px;
-        }
-    }
+     * {
+         transition: all .3s;
+     }
+     
+     body {
+         font-family: 'Open Sans', sans-serif, Arial, Helvetica, sans-serif;
+         font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
+         text-align: center;
+         margin: 20px;
+     }
+     
+     nav ul,
+     footer nav ul {
+         display: flex;
+     }
+     
+     .bio {
+         display: flex;
+         flex-direction: column;
+         order: -2;
+     }
+     
+     li {
+         list-style-type: none;
+     }
+     
+     nav ul {
+         padding: 10px;
+         flex-direction: column;
+         letter-spacing: .7px;
+     }
+     
+     h1 {
+         font-family: "roboto";
+         font-weight: 700;
+         font-size: 2.3rem;
+         margin-top: 0;
+     }
+     
+     h2 {
+         font-family: "open sans";
+     }
+     
+     p {
+         font-family: "open sans";
+         font-weight: 400;
+         color: rgb(78, 76, 76);
+         font-size: 1.5rem;
+         line-height: 1.5;
+         padding: 1rem;
+     }
+     
+     a {
+         text-decoration: none;
+         color: rgb(48, 55, 61);
+     }
+     
+     a:hover {
+         color: blue;
+         cursor: pointer;
+     }
+     
+     ol {
+         color: dimgrey;
+         font-size: 1.5rem;
+         line-height: 3rem;
+     }
+     
+     footer nav ul {
+         flex-direction: row;
+         justify-content: space-around;
+         margin-top: 130px;
+     }
+     
+     .links {
+         padding: 1.3rem;
+         font-family: "roboto";
+         font-weight: 700;
+         font-size: 1.2rem;
+         text-transform: uppercase;
+     }
+     
+     .content img {
+         object-fit: cover;
+         width: 100%;
+         margin-bottom: 20px;
+         margin-top: 30px;
+     }
+     
+     #portfolio {
+         font-family: "ital";
+         font-size: 2rem;
+         margin-top: 120px;
+         margin-bottom: 70px;
+     }
+     
+     #contacts {
+         margin-top: 140px;
+     }
+     
+     .hidden {
+         display: none;
+     }
+     
+     .hightlight {
+         font-family: 'open sans';
+         font-weight: 400;
+     }
+     
+     .h1-student {
+         display: none;
+     }
+     
+     @media screen and (min-width: 768px) {
+         nav ul {
+             flex-direction: row;
+             justify-content: center;
+         }
+         .links {
+             font-size: 1rem;
+         }
+         h1 {
+             margin-top: 40px;
+             margin-bottom: 0;
+             font-size: 1.7rem;
+         }
+         .bio {
+             flex-direction: row;
+         }
+         #portfolio {
+             clear: both;
+             padding-top: 60px;
+             margin-top: 130px;
+             text-align: center;
+             font-size: 1.5rem;
+             margin-bottom: 0;
+             letter-spacing: .9px;
+         }
+         .presentation {
+             padding-right: 20px;
+             text-align: left;
+             order: -1;
+         }
+         p {
+             line-height: 1.2;
+             font-size: 1.3rem;
+             margin: 0;
+             padding: 0;
+         }
+         .content div {
+             width: 40vw;
+             flex-grow: 1;
+             margin: 10px;
+         }
+         .content {
+             display: flex;
+             flex-wrap: wrap;
+             flex-direction: row;
+             width: 100%;
+             margin: 0;
+             padding: 0;
+         }
+         h2 {
+             margin: 10px auto;
+         }
+         #contacts {
+             margin-top: 100px;
+             margin-bottom: 40px;
+         }
+         .p-contact {
+             margin: 0 12%;
+         }
+         .bottom-nav {
+             justify-content: space-around;
+             font-size: 1rem;
+             border-top: solid 1px rgb(218, 215, 215);
+         }
+         .item1 {
+             margin-right: auto;
+         }
+         .top {
+             display: none;
+         }
+         .hidden {
+             margin: 0 1rem;
+             display: flex;
+             text-transform: uppercase;
+         }
+     }
+     
+     @media screen and (min-width: 1024px) {
+         body {
+             margin: 0 12%;
+         }
+         .content div {
+             flex-direction: row;
+             width: 25%;
+         }
+         nav ul {
+             margin-top: 0;
+             padding-left: 0;
+             justify-content: flex-end;
+         }
+         .links {
+             padding-right: 10px;
+         }
+         h1 {
+             display: none;
+         }
+         .h1-student {
+             display: flex;
+             margin-right: auto;
+             margin-top: 15px;
+             font-weight: 700;
+             font-size: 25px;
+         }
+         .proifle {
+             order: -2;
+         }
+     }
