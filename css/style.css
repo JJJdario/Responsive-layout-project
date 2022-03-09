@@ -130,7 +130,7 @@
          #portfolio {
              clear: both;
              padding-top: 60px;
-             margin-top: 130px;
+             margin-top: 80px;
              text-align: center;
              font-size: 1.5rem;
              margin-bottom: 0;
@@ -214,7 +214,7 @@
              font-weight: 700;
              font-size: 25px;
          }
-         .proifle {
-             order: -2;
+         .profile {
+             width: 70vw;
          }
      }
