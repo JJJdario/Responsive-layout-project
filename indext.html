@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <h1 id="top">Student Name</h1>
         <nav>
             <ul>
@@ -25,6 +25,9 @@
                     <a href="#portfolio">Portfolio</a></li>
                 <li class="links">
                     <a href="#contacts">Contact</a></li>
+                <li class="links">
+                    <a href="#skills">Skills</a>
+                </li>
             </ul>
         </nav>
         <div class="bio">
@@ -69,23 +72,36 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <h2 class="sk">Skills</h2>
+            <ul id="skills">
+                <li>Html</li>
+                <li>Css</li>
+                <li>Java Script</li>
+                <li>JQuery</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="contacts">Contact</h2>
+            <p class="p-contact">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
+            <ol>
+                <li><span class="hightlight">Phone</span> +(111)555-1234</li>
+                <li><span class="hightlight">Email</span> email@yoursite.com</li>
+            </ol>
+        </section>
     </main>
-
-
-    <h2 id="contacts">Contact</h2>
-    <p class="p-contact">If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-    <ol>
-        <li><span class="hightlight">Phone</span> +(111)555-1234</li>
-        <li><span class="hightlight">Email</span> email@yoursite.com</li>
-    </ol>
     <footer>
         <nav>
             <ul class="bottom-nav">
                 <li class="item1">Student Name</li>
-                <li class="top"><a href="#">Back to top</a></li>
-                <li class="hidden"><a href='#'>Home</a></li>
+                <li class="back-to-top"><a href="#home">Back to top</a></li>
+                <li class="hidden"><a href="#home">Home</a></li>
                 <li class="hidden"><a href="#portfolio">Portfolio</a></li>
                 <li class="hidden"><a href="#contacts">Contacts</a></li>
+                <li class="hidden">
+                    <a href="#skills"></a>Skills</li>
             </ul>
         </nav>
     </footer>
